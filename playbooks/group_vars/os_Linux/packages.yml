@@ -24,6 +24,7 @@ flatpak_packages:
   - name: com.makemkv.MakeMKV
   - name: com.plexamp.Plexamp
   - name: com.spotify.Client
+  - name: fr.handbrake.ghb
   - name: fr.romainvigier.MetadataCleaner
   - name: io.bassi.Amberol
   - name: io.github.diegoivan.pdf_metadata_editor
