@@ -3,8 +3,8 @@
 dnf_packages:
   cli:
     - abcde
-    - bash-completion
     - bandwhich  # atim
+    - bash-completion
     - bat
     - bcal
     - borgbackup
@@ -35,8 +35,8 @@ dnf_packages:
     - httpie
     - iftop
     - inxi
-    - jq
     - jo
+    - jq
     - keychain
     - kubectl  # google-cloud-sdk
     - lame
@@ -50,13 +50,16 @@ dnf_packages:
     - ncdu
     - neofetch
     - nmap
+    - nss-tools
     - ocrmypdf
+    - openssl
     - p7zip
     - p7zip-plugins
     - par
-    - perf
     - pdfgrep
+    - perf
     - podman
+    - preload
     - pwgen
     - python3
     - python3-devel
@@ -76,6 +79,7 @@ dnf_packages:
     - vim
     - wget
     - xsel
+    - xterm
     - xz
     - zsh
     - zsh-autosuggestions

@@ -7,6 +7,8 @@ copr:
     system_type: [gui, cli]
   - name: keefle/glow
     system_type: [gui, cli]
+  - name: elxreno/preload
+    system_type: [gui, cli]
 
 repos:
   - name: 1password-gui  # Avoid name conflict with repo packaged with rpm: 1password.repo
