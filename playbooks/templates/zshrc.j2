@@ -71,13 +71,13 @@ export SHELL_SESSIONS_DISABLE=1  # See /etc/zshrc_Apple_Terminal
 export NIX_SSL_CERT_FILE=/etc/pki/tls/certs/ca-bundle.crt
 export NIX_PROFILES="/nix/var/nix/profiles/default $HOME/.nix-profile"
 export HELPDIR=/usr/share/zsh/{{ ansible_facts.packages['zsh'][0]['version'] }}/help
-{% elif 'Ubuntu' in ansible_distribution %}
+{% elif 'Pop!_OS' in ansible_distribution %}
 export NIX_SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 export NIX_PROFILES="/nix/var/nix/profiles/default $HOME/.nix-profile"
 {% endif %}
 
 
-{% if 'Ubuntu' not in ansible_distribution %}
+{% if 'Pop!_OS' not in ansible_distribution %}
 unalias run-help
 {% endif %}
 alias help='run-help'  # help topics path set via $HELPDIR
@@ -119,7 +119,7 @@ alias lsblk='lsblk -o "NAME,FSTYPE,SIZE,UUID,MOUNTPOINT"'
 alias lsports='lsof -i -P -n'
 alias proc='ps -e --forest -o pid,ppid,user,time,cmd'
 {% endif %}
-{% if 'Ubuntu' in ansible_distribution %}
+{% if 'Pop!_OS' in ansible_distribution %}
 alias bat='batcat'
 {% endif %}
 
@@ -256,7 +256,7 @@ source {{ homebrew_prefix }}/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/c
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/fzf/shell/key-bindings.zsh
-{% elif 'Ubuntu' in ansible_distribution %}
+{% elif 'Pop!_OS' in ansible_distribution %}
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/doc/fzf/examples/completion.zsh

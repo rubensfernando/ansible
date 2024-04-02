@@ -10,8 +10,8 @@ This Ansible repo bootstraps and manages dotfiles for the following system types
 2. **Linux systems** `x86_64`
    1. **Fedora Workstation edition** (spins may work but are unsupported)
    2. **Fedora Server edition**
-   3. **Ubuntu Desktop LTS** (flavors may work but are unsupported)
-   4. **Ubuntu Server LTS**
+   3. **Pop!_OS Desktop LTS** (flavors may work but are unsupported)
+   4. **Pop!_OS Server LTS**
 
 The playbooks are designed with _no assumed prior knowledge of the system_, in contrast to how a server may be provisioned (e.g. images, PXE boot, etc). There are several steps to the process:
 

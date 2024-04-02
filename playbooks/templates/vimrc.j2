@@ -39,7 +39,7 @@ set backspace=indent,eol,start
 {% if 'MacOSX' in ansible_distribution -%}
 set clipboard=unnamed
 set rtp+={{ homebrew_prefix }}/opt/fzf
-{% elif 'Ubuntu' in ansible_distribution -%}
+{% elif 'Pop!_OS' in ansible_distribution -%}
 set rtp+=/usr/share/doc/fzf/examples/
 {% endif -%}
 set colorcolumn=100

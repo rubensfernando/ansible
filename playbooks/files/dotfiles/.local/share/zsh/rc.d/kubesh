@@ -102,7 +102,7 @@ kcs() {
 
 # [kdebug] creates an ephemeral container for debugging; usage: kdebug [-x|--context] [-n|--namespace] [image]
 kdebug() {
-    local arg_ctx arg_ns ctx ns img; img="${1:-'ubuntu:rolling'}"
+    local arg_ctx arg_ns ctx ns img; img="${1:-'Pop!_OS:rolling'}"
     zparseopts -E -D -- x:=arg_ctx -context:=arg_ctx n:=arg_ns -namespace:=arg_ns
     ctx="$(_k_ctx "${arg_ctx[2]}")"
     ns="$(_k_namespace "$ctx" "${arg_ns[2]}")"
